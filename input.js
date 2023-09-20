@@ -1,10 +1,12 @@
 let connection;
 
 const handleUserInput = function (key, conn) {
+  //special exit key
   if (key === "\u0003") {
     process.exit();
   }
 
+  //check for movement keys and corresponding commands
   if (key === "w") {
     conn.write("Move: up");
   } else if (key === "a") {
@@ -13,6 +15,13 @@ const handleUserInput = function (key, conn) {
     conn.write("Move: down");
   } else if (key === "d") {
     conn.write("Move: right");
+  }
+
+  //Implement special keys for canned messages
+  if (key === "1") {
+    conn.write("Say: Greetings!");
+  } else if (key === "2") {
+    conn.write("Say: Let's Slither!");
   }
 };
 
