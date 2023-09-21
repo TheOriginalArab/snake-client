@@ -1,3 +1,9 @@
+const {
+  MOVE_UP_KEY,
+  MOVE_DOWN_KEY,
+  MOVE_RIGHT_KEY,
+  MOVE_LEFT_KEY,
+} = require("./constants");
 let connection;
 
 const handleUserInput = function (key, conn) {
@@ -7,13 +13,13 @@ const handleUserInput = function (key, conn) {
   }
 
   //check for movement keys and corresponding commands
-  if (key === "w") {
+  if (key === MOVE_UP_KEY) {
     conn.write("Move: up");
-  } else if (key === "a") {
+  } else if (key === MOVE_LEFT_KEY) {
     conn.write("Move: left");
-  } else if (key === "s") {
+  } else if (key === MOVE_DOWN_KEY) {
     conn.write("Move: down");
-  } else if (key === "d") {
+  } else if (key === MOVE_RIGHT_KEY) {
     conn.write("Move: right");
   }
 
