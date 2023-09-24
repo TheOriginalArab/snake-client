@@ -3,12 +3,13 @@ const {
   MOVE_DOWN_KEY,
   MOVE_RIGHT_KEY,
   MOVE_LEFT_KEY,
+  EXIT,
 } = require("./constants");
 let connection;
 
 const handleUserInput = function (key, conn) {
   //special exit key
-  if (key === "\u0003") {
+  if (key === EXIT) {
     process.exit();
   }
 
