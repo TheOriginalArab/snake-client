@@ -1,3 +1,4 @@
+//constants to be exported and used in client, and input files.
 const IP = "localhost";
 const PORT = 50541;
 const MOVE_UP_KEY = "w";
