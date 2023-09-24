@@ -8,7 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["Snake Gameplay View"](#)
+!["Snake Gameplay View"](#![Snake Description](https://github.com/TheOriginalArab/snake-client/assets/137915643/8a0adfb4-e2a6-4bfa-9408-ba3d1bb57699)
+)
 
 ## Getting Started
 
