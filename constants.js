@@ -5,6 +5,7 @@ const MOVE_DOWN_KEY = "s";
 const MOVE_RIGHT_KEY = "d";
 const MOVE_LEFT_KEY = "a";
 const ENCODING = "utf8";
+const EXIT = "\u0003";
 
 module.exports = {
   IP,
@@ -14,4 +15,5 @@ module.exports = {
   MOVE_RIGHT_KEY,
   MOVE_LEFT_KEY,
   ENCODING,
+  EXIT,
 };
