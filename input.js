@@ -4,6 +4,7 @@ const {
   MOVE_RIGHT_KEY,
   MOVE_LEFT_KEY,
   EXIT,
+  ENCODING,
 } = require("./constants");
 let connection;
 
@@ -36,7 +37,7 @@ const setupInput = (conn) => {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
-  stdin.setEncoding("utf8");
+  stdin.setEncoding(ENCODING);
   stdin.resume();
   stdin.on("data", (key) => handleUserInput(key, conn));
   return stdin;
